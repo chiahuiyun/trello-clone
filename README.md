@@ -1,8 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Demo Website: https://trello-clone-mu-taupe.vercel.app/
 
-## Getting Started
+## Fullstack Trello Clone: Next.js 14, Server Actions, React, Prisma, Stripe, Tailwind, MySQL
 
-First, run the development server:
+Key Features:
+- Auth 
+- Organizations / Workspaces
+- Board creation
+- Unsplash API for random beautiful cover images
+- Activity log for entire organization
+- Board rename and delete
+- List creation
+- List rename, delete, drag & drop reorder and copy
+- Card creation
+- Card description, rename, delete, drag & drop reorder and copy
+- Card activity log
+- Board limit for every organization
+- Stripe subscription for each organization to unlock unlimited boards
+- Landing page
+- MySQL DB
+- Prisma ORM
+- shadcnUI & TailwindCSS
 
 ```bash
 npm run dev

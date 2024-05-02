@@ -12,7 +12,7 @@ export const Logo=()=>{
     return (
         <Link href="/">
             <div className="hover:opacity-75 transition items-center gap-x-2 hidden md:flex">
-                <Image src="logo.svg"
+                <Image src="../logo.svg"
                 alt="Logo"
                 height={30}
                 width={30} />

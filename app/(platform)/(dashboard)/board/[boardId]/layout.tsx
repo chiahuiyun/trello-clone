@@ -12,6 +12,7 @@ export async function generateMetadata({
   };
 }) {
   const { orgId } = auth();
+  
   if (!orgId) {
     return {
       title: "Board",
@@ -40,6 +41,7 @@ export default async function BoardIdLayout({
   };
 }) {
   const { orgId } = auth();
+
   if (!orgId) {
     redirect("/select-org");
   }
@@ -57,12 +59,14 @@ export default async function BoardIdLayout({
 
   return (
     <div
-      className="relative h-full  bg-cover bg-no-repeat bg-center"
+      className="relative h-full bg-no-repeat bg-cover bg-center "
       style={{ backgroundImage: `url(${board.imageFullUrl})` }}
     >
       <BoardNavbar board={board} />
       <div className="absolute inset-0 bg-black/10"></div>
-      <main className="relative pt-28 h-full">{children}</main>
+      <main className="relative pt-28 h-full">  
+        {children}
+      </main>
     </div>
   );
 }
